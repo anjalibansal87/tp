@@ -28,11 +28,11 @@ pipeline {
                 }
             }
         }
-}
 	// ③ Build a container with the code source of the application
         stage('Build') {
             steps {
                 sh "docker build -t ${env.PRODUCT}:py ."
             }
         }
+    }
 }
