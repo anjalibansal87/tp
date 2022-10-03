@@ -11,8 +11,8 @@ pipeline {
     }
 
     options {
-        ansiColor('xterm')
-        // skipDefaultCheckout()
+//         ansiColor('xterm')
+        skipDefaultCheckout()
         buildDiscarder(logRotator(numToKeepStr: '10'))
     }
 
